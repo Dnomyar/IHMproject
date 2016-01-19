@@ -1,5 +1,6 @@
 <?php
 
-echo 'coucou';
+  echo 'coucou';
+  echo "new line add bu ugho";
 
 ?>

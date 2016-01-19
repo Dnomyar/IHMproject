@@ -1,6 +1,7 @@
 <?php
 
   echo 'coucou';
-  echo "UGHO : new line add bu ugho";
+
+  echo "UGHO : new line add by ugho :)";
 
 ?>

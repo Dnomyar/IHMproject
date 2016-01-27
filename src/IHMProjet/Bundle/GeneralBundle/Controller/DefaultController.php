@@ -15,3 +15,4 @@ class DefaultController extends Controller
         return $this->render('IHMProjetGeneralBundle:Default:index.html.twig');
     }
 }
+?>

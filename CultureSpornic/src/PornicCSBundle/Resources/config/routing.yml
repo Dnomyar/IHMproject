@@ -1,0 +1,3 @@
+pornic_cs_homepage:
+    path:     /
+    defaults: { _controller: PornicCSBundle:Default:index }

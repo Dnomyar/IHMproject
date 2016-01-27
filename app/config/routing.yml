@@ -1,4 +1,0 @@
-ihm_projet_general:
-    resource: "@IHMProjetGeneralBundle/Controller/"
-    type:     annotation
-    prefix:   /

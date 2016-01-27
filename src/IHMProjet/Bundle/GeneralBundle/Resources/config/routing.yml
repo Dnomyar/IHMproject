@@ -1,5 +1,0 @@
-# src/IHMProjet/Bundle/GeneralBundle/Resources/config/routing.yml
-
-hello_the_world:
-    path:     /hello-world
-    defaults: { _controller: IHMProjetGeneralBundle:Advert:index }

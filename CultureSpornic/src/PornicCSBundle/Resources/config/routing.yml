@@ -2,6 +2,4 @@ pornic_cs_homepage:
     path:     /
     defaults: { _controller: PornicCSBundle:Default:index }
 
-pornic_cs_test:
-	path:	/test
-	defaults: {_controller: PornicCSBundle:Default:test}
+

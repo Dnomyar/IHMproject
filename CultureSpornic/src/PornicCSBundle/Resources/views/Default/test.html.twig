@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
+{% extends '::base.html.twig' %}
+{% block body %}
+    <h2>Page test</h2>
+{% endblock %}
 
-        <title>{% block title %}IHM Project{% endblock %}</title>
+{% block javascripts %}
 
-        {% block stylesheets %}
-	        <link rel="stylesheet" href="{{ asset('bundles/framework/css/main.css') }}" />
-	        <!-- Latest compiled and minified CSS -->
-	        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+{% endblock %}
 
-	        <!-- Optional theme -->
-	        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		{% endblock %}
-    </head>
-    <body>
-        {% block body %}
-            {% include "PornicCSBundle:Default:nav.html.twig" %}
-            <h2>Page test</h2>
-        {% endblock %}
-        
-        {% block javascripts %}
-
-        {% endblock %}
-    </body>
-</html>

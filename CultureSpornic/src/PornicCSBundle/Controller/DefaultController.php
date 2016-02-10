@@ -10,4 +10,15 @@ class DefaultController extends Controller
     {
         return $this->render('PornicCSBundle:Default:index.html.twig');
     }
+
+    public function navAction()
+    {
+        return $this->render('PornicCSBundle:Default:nav.html.twig');
+    }
+
+    public function testAction()
+    {
+        return $this->render('PornicCSBundle:Default:test.html.twig');
+    }
+
 }

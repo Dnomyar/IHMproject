@@ -1,6 +1,6 @@
 pornic_cs:
-    resource: "@PornicCSBundle/Resources/config/routing.yml"
-    prefix:   /
+    resource: "@PornicCSBundle/Controller"
+    type: annotation
 
 app:
     resource: "@AppBundle/Controller/"

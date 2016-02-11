@@ -6,39 +6,60 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Utilisateurs
+ *
+ * @ORM\Table(name="pornic_utilisateurs")
+ * @ORM\Entity(repositoryClass="PornicCSBundle\Repository\UtilisateursRepository")
+
  */
 class Utilisateurs
 {
     /**
      * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255)
      */
     private $nom;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=255)
      */
     private $prenom;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="login", type="string", length=255)
      */
     private $login;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=255)
      */
     private $motDePasse;
 
     /**
      * @var string
+     *
+     * @ORM\Column(name="mail", type="string", length=255)
      */
     private $mail;
 
+    public function __construct()
+    {
+    }
 
     /**
      * Get id

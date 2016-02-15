@@ -22,14 +22,15 @@ class DefaultController extends Controller
         return $this->render('PornicCSBundle:Default:index.html.twig');
     }
 
-    public function navAction()
+    /**
+     * @return array
+     *
+     * @Route("/culture", name="pornic_culture")
+     * @Method("GET")
+     */
+    public function cultureAction()
     {
-        return $this->render('PornicCSBundle:Default:nav.html.twig');
-    }
-
-    public function testAction()
-    {
-        return $this->render('PornicCSBundle:Default:test.html.twig');
+        return $this->render('PornicCSBundle:Default:culture.html.twig');
     }
 
 }

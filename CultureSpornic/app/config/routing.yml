@@ -1,3 +1,11 @@
+pornic_cs_annonces:
+    resource: "@PornicCSBundle/Controller/AnnoncesController.php"
+    type:     annotation
+
+pornic_cs_utilisateurs:
+    resource: "@PornicCSBundle/Controller/UtilisateursController.php"
+    type:     annotation
+
 pornic_cs:
     resource: "@PornicCSBundle/Controller"
     type: annotation

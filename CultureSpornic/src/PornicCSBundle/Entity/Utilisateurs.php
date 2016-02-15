@@ -7,9 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Utilisateurs
  *
- * @ORM\Table(name="pornic_utilisateurs")
+ * @ORM\Table(name="utilisateurs")
  * @ORM\Entity(repositoryClass="PornicCSBundle\Repository\UtilisateursRepository")
-
  */
 class Utilisateurs
 {
@@ -39,27 +38,24 @@ class Utilisateurs
     /**
      * @var string
      *
-     * @ORM\Column(name="login", type="string", length=255)
+     * @ORM\Column(name="login", type="string", length=255, unique=true)
      */
     private $login;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255)
+     * @ORM\Column(name="password", type="text")
      */
-    private $motDePasse;
+    private $password;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mail", type="string", length=255)
+     * @ORM\Column(name="mail", type="string", length=255, unique=true)
      */
     private $mail;
 
-    public function __construct()
-    {
-    }
 
     /**
      * Get id
@@ -141,26 +137,26 @@ class Utilisateurs
     }
 
     /**
-     * Set motDePasse
+     * Set password
      *
-     * @param string $motDePasse
+     * @param string $password
      * @return Utilisateurs
      */
-    public function setMotDePasse($motDePasse)
+    public function setPassword($password)
     {
-        $this->motDePasse = $motDePasse;
+        $this->password = $password;
 
         return $this;
     }
 
     /**
-     * Get motDePasse
+     * Get password
      *
      * @return string 
      */
-    public function getMotDePasse()
+    public function getPassword()
     {
-        return $this->motDePasse;
+        return $this->password;
     }
 
     /**
